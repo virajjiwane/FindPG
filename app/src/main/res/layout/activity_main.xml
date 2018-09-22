@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/menuText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp"
+        android:text="@string/menutext"
+        android:textColor="@color/TextMain"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupMain"
+        android:layout_width="104dp"
+        android:layout_height="164dp"
+        android:layout_centerInParent="true">
+
+        <RadioButton
+            android:id="@+id/tenant_m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/TextMain"
+            android:buttonTint="@color/TextMain"
+            android:text="@string/tenant" />
+
+        <RadioButton
+            android:id="@+id/owner_m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/TextMain"
+            android:textColor="@color/TextMain"
+            android:text="@string/owner" />
+
+        <RadioButton
+            android:id="@+id/register_m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/TextMain"
+            android:textColor="@color/TextMain"
+            android:text="@string/register" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="28dp"
+        android:background="@color/TextMain"
+        android:text="@string/next"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/exit_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/next_m"
+        android:layout_marginStart="27dp"
+        android:background="@color/TextMain"
+        android:text="Exit"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

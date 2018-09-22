@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Find PG</string>
+    <string name="menutext">Select your identity</string>
+    <string name="tenant">Tenant</string>
+    <string name="owner">Owner</string>
+    <string name="register">Register</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+
+    <!-- Strings related to login -->
+    <string name="title_activity_login">Find PG</string>
+    <string name="prompt_email_tenant">Enter email (eg. tenant@example.com)</string>
+    <string name="prompt_email_owner">Enter email (eg. owner@example.com)</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_pgdetail_map">Map</string>
+    <string name="title_activity_owner_home">OwnerHomeActivity</string>
+</resources>

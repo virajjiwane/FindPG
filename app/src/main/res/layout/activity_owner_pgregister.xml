@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbars="vertical"
+    tools:context=".OwnerPGRegisterActivity">
+
+    <ImageButton
+        android:id="@+id/backToOwnerHomeActivity"
+        android:layout_width="62dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:foreground="@android:color/transparent"
+        android:tint="@color/colorAccent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <EditText
+        android:id="@+id/nameOfPG"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/progressBar"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Name of PG"
+        android:inputType="textPersonName" />
+
+    <Switch
+        android:id="@+id/switchContactEditable"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView15"
+        android:checked="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Yes  "
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/noOfBeds"
+        android:ems="10"
+        android:hint="Address here"
+        android:inputType="textPostalAddress"
+        android:paddingBottom="20dp"
+        android:paddingRight="10dp" />
+
+    <EditText
+        android:id="@+id/noOfRooms"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView15"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="No of rooms"
+        android:inputType="number"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+    <EditText
+        android:id="@+id/noOfBeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/noOfRooms"
+        android:ems="10"
+        android:hint="No of beds in room"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Should tenant contact you on provided phone no"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nameOfPG"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Is it room based or cot based"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView15"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center_horizontal"
+        android:hint="Contact No"
+        android:inputType="phone"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/ownerMapButton"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/noOfBeds"
+        android:background="@color/colorAccent"
+        app:srcCompat="@android:drawable/ic_menu_compass" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:progress="0" />
+
+    <Switch
+        android:id="@+id/switchCotBased"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/nameOfPG"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="No "
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/toOwnerPGAmenityActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ownerRadioGroup"
+        android:background="@color/colorAccent"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10dp"
+        android:text="Next" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="84dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextAddress"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Rooms available for "
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/ownerRadioGroup"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextAddress"
+        android:layout_marginStart="168dp"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonBoys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Boys"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGirls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Girls"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/noOfBeds"
+        android:ems="10"
+        android:gravity="right"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+</RelativeLayout>
